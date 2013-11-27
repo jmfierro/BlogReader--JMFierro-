@@ -9,11 +9,11 @@ public class Post implements Parcelable{
 	
 	private long id;
 	private Date date;
+	private String url;
 	private String title;
 	private String picUrl;
 	private String excerpt;
 	private String body;
-	private String url;
 	
 	
 	// *************************************************************
@@ -21,6 +21,7 @@ public class Post implements Parcelable{
 	// 
 	// *************************************************************
 	public final static Parcelable.Creator<Post> CREATOR = new Creator<Post>() {
+
 		
 		@Override
 		public Post[] newArray(int size) {
@@ -62,16 +63,16 @@ public class Post implements Parcelable{
 	}
 
 
-	public Post(long id, Date date, String title, String picUrl,
-			String excerpt, String body, String url) {
+	public Post(long id, Date date, String url, String title, String picUrl,
+			String excerpt, String body) {
 		super();
 		this.id = id;
 		this.date = date;
+		this.url = url;
 		this.title = title;
 		this.picUrl = picUrl;
 		this.excerpt = excerpt;
 		this.body = body;
-		this.url = url;
 	}
 
 
