@@ -2,8 +2,6 @@ package com.jmfierro.utad.android.model;
 
 import java.util.Date;
 
-import com.utad.android.blogreader.model.Post;
-
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -73,6 +71,76 @@ public class Post implements Parcelable{
 		this.picUrl = picUrl;
 		this.excerpt = excerpt;
 		this.body = body;
+		this.url = url;
+	}
+
+
+	public long getId() {
+		return id;
+	}
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+
+	public Date getDate() {
+		return date;
+	}
+
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getPicUrl() {
+		return picUrl;
+	}
+
+
+	public void setPicUrl(String picUrl) {
+		this.picUrl = picUrl;
+	}
+
+
+	public String getExcerpt() {
+		return excerpt;
+	}
+
+
+	public void setExcerpt(String excerpt) {
+		this.excerpt = excerpt;
+	}
+
+
+	public String getBody() {
+		return body;
+	}
+
+
+	public void setBody(String body) {
+		this.body = body;
+	}
+
+
+	public String getUrl() {
+		return url;
+	}
+
+
+	public void setUrl(String url) {
 		this.url = url;
 	} 
 	
