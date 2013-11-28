@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<!--     style="@style/ListViewItemStyle" -->
+    style="@style/ListViewItemStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 

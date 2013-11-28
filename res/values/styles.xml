@@ -16,5 +16,23 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    <style name="ListViewStyle" parent="@android:style/Widget.ListView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    
+    <style name="ListViewItemStyle">
+        <item name="android:background">@drawable/post_list_item_background</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    
+    <style name="PostStyle">
+        <item name="android:background">@drawable/post_background</item>
+        <item name="android:padding">36dp</item>
+    </style>
+    
+    <style name="DialogTheme" parent="@android:style/Theme.Translucent.NoTitleBar"></style>
+    
 </resources>
