@@ -23,12 +23,14 @@ public class PostListActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_post_list);
+		setContentView(R.layout.activity_post_list_tablet); //.activity_post_list);
 		
 		// Datos para la lista
 		posts = PostList.getInstance();
+		
 		// Lista
 		final ListView l = (ListView) findViewById(R.id.postListView);
+//		ListView l = (ListView) findViewById(R.id.postListView);
 		l.setAdapter(new PostListAdapter(this,posts));
 		
 		l.setOnItemClickListener(new OnItemClickListener() {
@@ -38,14 +40,15 @@ public class PostListActivity extends FragmentActivity {
 					long id) {
 				
 				// Marca Item del listview seleccionado
-				l.setItemChecked(position, true);
+				//l.setItemChecked(position, true);
 				// Obtiene post seleccionado
 				//mPost = PostList.getInstance().get(id);
 				
 				// Crea fragmento
 				PostFragment mFragment = new PostFragment();
 				Bundle arg = new Bundle();
-				arg.putLong(mFragment.POST_ID_EXTRA, id);
+				arg.putLong(mFragment.POST_ID_EXTRA, id);  //mPost); 
+						//posts.getPosts().get(position).getId());   //id);
 				mFragment.setArguments(arg);
 				
 				// Añade fragmento dentro del FrameLayout
